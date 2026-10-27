@@ -1,29 +1,105 @@
+css
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f4f6f8;
+  color: #263238;
+  line-height: 1.6;
 }
+
 header {
   background: #2e7d32;
   color: white;
   text-align: center;
   padding: 24px;
 }
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+}
+
 main {
   max-width: 700px;
-  margin: 20px auto;
+  margin: 24px auto;
   padding: 0 16px;
 }
+
+main h2 {
+  color: #263238;
+}
+
 #cari {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 16px;
+  padding: 12px;
+  margin-bottom: 12px;
   font-size: 16px;
-  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
 }
+
+#cari:focus {
+  outline: 2px solid #2e7d32;
+  outline-offset: 2px;
+}
+
 .kartu {
   background: white;
   padding: 16px;
   margin-bottom: 12px;
   border-radius: 8px;
+  border: 1px solid #e0e7e2;
+  box-shadow: 0 3px 10px #0000000d;
+}
+
+.kartu h3 {
+  color: #2e7d32;
+  margin-top: 0;
+}
+
+.kartu p {
+  margin-bottom: 0;
+}
+
+#jumlah-hasil {
+  color: #607166;
+  font-size: 14px;
+}
+
+#pesan-kosong {
+  text-align: center;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 16px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  main {
+    margin: 18px auto;
+  }
+
+  .kartu {
+    padding: 14px;
+  }
 }
